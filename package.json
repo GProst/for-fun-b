@@ -1,0 +1,26 @@
+{
+  "name": "gprost.com-back",
+  "version": "9.99.999",
+  "description": "German Prostakov blog back",
+  "homepage": "https://github.com/GProst/for-fun-b",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "awesome",
+    "GProst"
+  ],
+  "author": "GProst a.k.a. German Prostakov <gprostmail@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GProst/for-fun-b"
+  },
+  "bugs": {
+    "url": "https://github.com/GProst/for-fun-b/issues"
+  }
+}
