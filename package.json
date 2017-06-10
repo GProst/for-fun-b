@@ -5,6 +5,7 @@
   "homepage": "https://github.com/GProst/for-fun-b",
   "scripts": {
     "start": "nodemon app.js",
+    "start-debug": "DEBUG=express:* nodemon app.js",
     "lint": "eslint './**.js' -c './eslint.json'",
     "eslint-fix": "eslint './**.js' -c './eslint.json' --fix"
   },
