@@ -13,15 +13,7 @@
     "eslint:recommended"
   ],
   "rules": {
-    "no-console": [
-      "warn",
-      {
-        "allow": [
-          "warn",
-          "error"
-        ]
-      }
-    ],
+    "no-console": "error",
     "semi":  ["error", "never"],
     "strict": [
       "error",
