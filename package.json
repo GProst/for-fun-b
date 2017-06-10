@@ -4,7 +4,7 @@
   "description": "German Prostakov blog back",
   "homepage": "https://github.com/GProst/for-fun-b",
   "scripts": {
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "lint": "eslint './**.js' -c './eslint.json'",
     "eslint-fix": "eslint './**.js' -c './eslint.json' --fix"
   },
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "eslint": "^3.19.0",
+    "nodemon": "^1.11.0",
     "pre-commit": "^1.2.2"
   },
   "repository": {
