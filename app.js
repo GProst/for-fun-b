@@ -5,6 +5,7 @@ const app = express()
 const compression = require('compression')
 const path = require('path')
 const morgan = require('morgan')
+const winston = require('winston')
 
 app.use(morgan('combined'))
 app.use(compression({level: 9}))
@@ -15,5 +16,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(3000, () => {
-  console.log('Server listening on port 3000!')
+  winston.info('Server listening on port 3000!')
 })
