@@ -13,7 +13,8 @@
   "author": "GProst a.k.a. German Prostakov <gprostmail@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "compression": "^1.6.2"
   },
   "devDependencies": {},
   "repository": {
