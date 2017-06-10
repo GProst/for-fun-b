@@ -4,8 +4,13 @@
   "description": "German Prostakov blog back",
   "homepage": "https://github.com/GProst/for-fun-b",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "lint": "eslint './**.js' -c './eslint.json'",
+    "eslint-fix": "eslint './**.js' -c './eslint.json' --fix"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "keywords": [
     "awesome",
     "GProst"
@@ -13,10 +18,13 @@
   "author": "GProst a.k.a. German Prostakov <gprostmail@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.15.3",
-    "compression": "^1.6.2"
+    "compression": "^1.6.2",
+    "express": "^4.15.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "pre-commit": "^1.2.2"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/GProst/for-fun-b"
