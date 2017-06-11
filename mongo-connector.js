@@ -12,6 +12,7 @@ module.exports = function connectToMongoDB() {
       return db
     })
     .catch((err) => {
-      winston.error('error on connecting db', err)
+      winston.error('error on connecting db')
+      throw err
     })
 }
