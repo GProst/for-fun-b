@@ -19,7 +19,6 @@ module.exports.connectToMongoDB = function connectToMongoDB() {
     })
 }
 
-
 module.exports.getDB = () => {
   return dataBase
 }
