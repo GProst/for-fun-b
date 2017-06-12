@@ -2,7 +2,7 @@
 
 const winston = require('winston')
 
-const connectToMongoDB = require('./mongo-connector')
+const {connectToMongoDB} = require('./mongo-connector')
 const startServer = require('./server-starter')
 
 connectToMongoDB()

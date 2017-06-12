@@ -5,14 +5,21 @@ const MongoClient = require('mongodb').MongoClient
 
 const dbUrl = 'mongodb://localhost:27017/GProstBlog'
 
-module.exports = function connectToMongoDB() {
+let dataBase
+
+module.exports.connectToMongoDB = function connectToMongoDB() {
   return MongoClient.connect(dbUrl)
     .then((db) => {
       winston.info('Connected successfully to GProstBlog database')
-      return db
+      dataBase = db
     })
     .catch((err) => {
       winston.error('error on connecting db')
       throw err
     })
+}
+
+
+module.exports.getDB = () => {
+  return dataBase
 }
