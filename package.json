@@ -21,6 +21,7 @@
   "dependencies": {
     "compression": "^1.6.2",
     "express": "^4.15.3",
+    "lodash": "^4.17.4",
     "mongodb": "^2.2.28",
     "morgan": "^1.8.2",
     "winston": "^2.3.1"
