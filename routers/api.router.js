@@ -26,7 +26,9 @@ router.get('/posts/page/:pageNumber', (req, res, next) => {
   const limit = 3
   const db = getDB()
   const posts = db.collection('posts')
-  posts.find({notInPostList: {$ne: true}}, {thumbnail: true, title: true, description: true, slug: true})
+  posts.find(
+      {notInPostList: {$ne: true}, published: true}, {thumbnail: true, title: true, description: true, slug: true}
+    )
     .skip(offset).limit(limit).toArray()
     .then(posts => {
       if (!posts) {
