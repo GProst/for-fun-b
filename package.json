@@ -6,8 +6,8 @@
   "scripts": {
     "start": "nodemon app.js",
     "start-debug": "DEBUG=express:* nodemon index.js",
-    "lint": "eslint './**.js' -c './eslint.json'",
-    "eslint-fix": "eslint './**.js' -c './eslint.json' --fix"
+    "lint": "eslint './**/*.js' -c './eslint.json'",
+    "eslint-fix": "eslint './**/*.js' -c './eslint.json' --fix"
   },
   "pre-commit": [
     "lint"
